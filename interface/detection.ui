@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CommunityDetection</class>
+ <widget class="QWidget" name="CommunityDetection">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1098</width>
+    <height>632</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_4" stretch="0">
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>社区检测算法</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout" stretch="1,3,0">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="1,1">
+         <item>
+          <widget class="QGroupBox" name="groupBox">
+           <property name="title">
+            <string>输入数据：</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout" stretch="3,4">
+              <property name="topMargin">
+               <number>30</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="labelInputNetwork">
+                <property name="text">
+                 <string>输入网络：</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="comboBoxInputNetwork">
+                <item>
+                 <property name="text">
+                  <string>Karata_Network</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Dolphin_Network</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>football_Network</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>cond-mat_Network</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="3,4">
+              <item>
+               <widget class="QLabel" name="labelInputAlgorithm">
+                <property name="text">
+                 <string>输入算法：</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="comboBoxInputAlgorithm">
+                <item>
+                 <property name="text">
+                  <string>LPA</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Louvain</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>GN</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="3,4">
+              <item>
+               <widget class="QLabel" name="labelInputParameters">
+                <property name="text">
+                 <string>输入参数（社团个数）：</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="lineEditParameters">
+                <property name="readOnly">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_2">
+           <property name="title">
+            <string>社区划分结果：</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QTextBrowser" name="textBrowserResult"/>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QGroupBox" name="groupBox_4">
+           <property name="title">
+            <string>真实网络展示</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_3">
+           <property name="title">
+            <string>社区划分结果图展示</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="0,0">
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="buttonSubmit">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>提交</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="buttonExit">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>退出</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>算法比较</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_5" stretch="1,3">
+       <item>
+        <widget class="QGroupBox" name="groupBox_7">
+         <property name="title">
+          <string/>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_6" stretch="0,0">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_7" stretch="3,4,5,0">
+            <item>
+             <widget class="QLabel" name="labelMeasure">
+              <property name="text">
+               <string>度量指标：</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="comboBoxMeasure">
+              <item>
+               <property name="text">
+                <string>Modularity</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>NMI</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>283</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="buttonConfirm">
+              <property name="text">
+               <string>确定</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_9" stretch="3,4,0,5">
+            <item>
+             <widget class="QLabel" name="labelInputParameters2">
+              <property name="text">
+               <string>输入参数：</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEditParameters2"/>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>93</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_8" stretch="1,1">
+         <item>
+          <widget class="QGroupBox" name="groupBox_5">
+           <property name="title">
+            <string>比较结果图</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_6">
+           <property name="title">
+            <string>比较结果表</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_7">
+            <item>
+             <widget class="QTableWidget" name="tableWidgetCompareResult">
+              <attribute name="horizontalHeaderStretchLastSection">
+               <bool>true</bool>
+              </attribute>
+              <attribute name="verticalHeaderStretchLastSection">
+               <bool>true</bool>
+              </attribute>
+              <row>
+               <property name="text">
+                <string>karata</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>football</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>dolphin</string>
+               </property>
+              </row>
+              <column>
+               <property name="text">
+                <string>LPA</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>GN</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Louvain</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonSubmit</sender>
+   <signal>clicked()</signal>
+   <receiver>CommunityDetection</receiver>
+   <slot>submit_alog()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>395</x>
+     <y>586</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>6</x>
+     <y>557</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonExit</sender>
+   <signal>clicked()</signal>
+   <receiver>CommunityDetection</receiver>
+   <slot>exit_alog()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>773</x>
+     <y>586</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1008</x>
+     <y>543</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonConfirm</sender>
+   <signal>clicked()</signal>
+   <receiver>CommunityDetection</receiver>
+   <slot>plot_metrics_graph()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1011</x>
+     <y>165</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1071</x>
+     <y>141</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>exit_alog()</slot>
+  <slot>submit_alog()</slot>
+  <slot>plot_metrics_graph()</slot>
+ </slots>
+</ui>
